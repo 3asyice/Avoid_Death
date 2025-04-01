@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Guilherme Carvalho">
+  <meta name="description" content="Um site com um tutorial de como vencer a morte por vários anos.">
+  
+  <title>Incidentes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style type="text/css" media="all">
+  @font-face {
+    font-family: OCRA;
+    src: url('https://www.big-loser.site/Caso/OCRA Alt.otf') format('woff2');
+    font-display: swap
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'OCRA', monospace;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    background: url('/img/images-3.jpeg');
+    background-size: 350px;
+  }
+  
+  header {
+    background: #33333391;
+    padding: 65px;
+  }
+  
+  header h1 {
+    color: #95AC92;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+  }
+  
+  .incident {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: auto;
+    background: #FFF4F2;
+    padding-top: 14%;
+    display: none;
+    padding-bottom: 14%;
+  }
+  
+  h2 {
+    color: #ff4e36;
+    text-shadow: 1px 1px 0 #ff4e36;
+    background: #FFF4F29E;
+    font-size: 15px;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  
+  span.red {
+    color: #c70000;
+    text-shadow: 1px 1px 0 #c70000;
+  }
+  
+  span.green {
+    color: #236925;
+    text-shadow: 1px 1px 0 #236925;
+  }
+  
+  p {
+    color: #005689;
+    text-shadow: 1px 1px 0 #005689;
+    text-align: left;
+    line-height: 20px;
+    margin-left: 7%;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 7%;
+  }
+  
+  p.black {
+    color: #121212;
+    text-shadow: 1px 1px 0 #121212;
+    line-height: 20px;
+    margin-left: 7%;
+    font-size: 14px;
+    margin-right: 7%;
+    flex-wrap: wrap;
+  }
+  
+  p.red {
+    color: #ab0613;
+    text-shadow: 1px 1px 0 #ab0613;
+    line-height: 20px;
+    margin-left: 7%;
+    font-size: 14px;
+    margin-right: 7%;
+    flex-wrap: wrap;
+  }
+  
+  p.green {
+    color: #236925;
+    text-shadow: 1px 1px 0 #236925;
+    line-height: 20px;
+    margin-left: 7%;
+    font-size: 14px;
+    margin-right: 7%;
+    flex-wrap: wrap;
+  }
+  
+  div.side_side {
+    display: flex;
+    width: 100%;
+  }
+  
+  .btn_txt {
+    background: none;
+    border: none;
+    display:inline;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:0;
+    margin-right:0;
+    text-shadow: 1px 1px 0 #77DAD5;
+    color:#77DAD5;
+  }
+  .btn_txt:hover{
+    text-shadow: 1px 1px 0 #BD132D;
+    color:#BD132D;
+  }
+  div.case{
+    margin:14%;
+    border-radius:0 0 15px 15px;
+    border-right:1px solid gray;
+    border-left:1px solid gray;
+    padding-top:20px;
+    padding-bottom:20px;
+    background:#324049;
+  }
+  p.article{
+    text-shadow: 1px 0 0 #92AD82;
+    color:#92AD82;
+  }
+  div.case legend{
+    color:#B5BAB4;
+    font-size: 18px;
+    text-align:left;
+    font-style:italic;
+  }
+  span.first__letter{
+    text-align: left;
+    line-height:1;
+    font-size:3rem;
+    font-weight:800;
+    float:left;
+  }
+  
+  fieldset{
+    border-radius:0 0 15px 15px;
+    border:2px solid #D6D8D5;
+  }
+</style>
+
+<body>
+  <header>
+    <h1>Evite a Morte</h1>
+  </header>
+  
+  <main>
+    <div class="case">
+
+      <fieldset>
+        <legend>Boate Kiss</legend>
+        <p class="article">Um dos maiores incidentes do Rio Grande do Sul aconteceu em Santa Maria, na<span class="btn_txt" onclick="kiss()"> Boate Kiss</span></p>
+      </fieldset>
+
+    </div>
+    <div class="case">
+      <fieldset>
+        <legend>Gran Circus Norte-Americano</legend>
+        <p class="article">O incidente do Gran Circus é um dos maiores do Brasil.</p>
+      </fieldset>
+    </div>
+    <div class="case">
+      <fieldset>
+        <legend>Voepass 2283</legend>
+        <p class="article">O avião que caiu em espiral e matou todos a bordo.</p>
+      </fieldset>
+    </div>
+    
+    <section class="incident" id="incident">
+      
+      <button style="margin-left: 7%; background:none;border:none;margin-bottom:50px;" onclick="reject()">❌</button>
+      <h2>DOM 27 JAN 2013</h2>
+      <p class="black">Boate Kiss</p>
+      <img width="450" height="450" src="/img/boate_kiss.jpg" alt="kiss" />
+      <p><span class="first__letter">O</span> incêndio em casa noturna matou cerca de <span class="red">242</span> jovens.</p>
+      <div class="side_side">
+        
+        <p class="green">As pessoas morreram asfixiadas pela fumaça.</p>
+        <p class="red">O fogo começou por volta das 2h da madrugada.</p>
+      </div>
+      <p>A Boate Kiss localizada na Rua das Andradas em Santa Maria, RS.</p>
+      <p>A boate não devia estar funcionando.</p>
+      <p>O TETO PEGOU FOGO EM UM ISOPOR.</p>
+      <div class="side_side">
+        
+        <p class="red">O ISOPOR GERA UMA FUMAÇA MUITO TÓXICA.</p>
+        <p class="green">Seguranças da boate tentam impedir a saída dos jovens.</p>
+      </div>
+      <p class="green">Fábio Cevinski anos atrás lutava contra a Leucemia, porém o tratamento o salvou. Fábio morreu no incêndio da Boate Kiss.</p>
+      <p>636 pessoas conseguiram sobreviver ao incêndio.</p>
+      <p class="red">Não vá a boates.</p>
+      <p>Muitas vítimas tentaram escapar pelo banheiro do estabelecimento e acabaram morrendo.</p>
+      <p>Uma boate sem alvará.</p>
+      <p>Não deveriam existir.</p>
+      <p>O fogo teve início com um sinalizador utilizado no show da banda <span class="green">Gurizada Fandangueira</span>.</p>
+      <div class="side_side">
+        
+        <p>Nenhum corpo encontrado em situação precária.</p>
+        <p>Os corpos dos jovens foram levados para a quadra do <span class="red">Centro Desportivo Municipal.</span></p>
+      </div>
+      <p>A última música que tocou na boate às <span class="red">2h30</span> foi "<span class="red">amor de chocolate</span>", do cantor <span class="red">Naldo</span>, a banda que cantava utilizou um dispositivo pirotécnico como efeito visual. As fagulhas atingem a <span class="red">espuma acústica</span> que revestia o teto da boate, e que começou a pegar fogo.</p>
+      <p>Muitas das pessoas que conseguiram sair da boate logo morreram a caminho do hospital.</p>
+      <p>Uma boate com apenas uma saída</p>
+      <div class="side_side">
+        
+        <p class="red">A falta de sinalização da boate fez com que as pessoas corressem para o banheiro pensando ser uma saída.</p>
+        <p>As pessoas entraram em pânico e pisotearam umas as outras.</p>
+      </div>
+      <p>A saída foi dificultada por uma grade colocada perto da porta de entrada que foi colocada para organizar a fila de entrada.</p>
+      <p class="green">POLIORETANO É TÓXICO.</p>
+      <p class="red">As pessoas não conseguiam respirar.</p>
+      <p class="green">Os bombeiros tiveram que quebrar uma parede para auxiliar no resgate das vítimas.</p>
+      <p>O ambiente escuro.</p>
+      <p class="red">29° 41' 03 5'' 5, 53° 48' 25'' 0</p>
+      <p class="green">FUMAÇA TÓXICA.</p>
+      <p>MORRERAM INTOXICADAS.</p>
+      <div class="side_side">
+        
+        <p class="green">SÁB 08 MAR 2025 — Morreu afogado Leonel Nunes da Silva irmão de uma das vítimas do incêndio Leandro Nunes da Silva.</p>
+        <p class="red">A morte consertou uma ponta solta .</p>
+      </div>
+      <p>Os dois poderiam estar na lista da morte a muito tempo.</p>
+      <iframe id="iframe_kiss" width="450" height="315" src="https://www.youtube.com/embed/4du_w57rmKI?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <p>Livro: TODO DIA A MESMA NOITE.</p>
+      <a href="/pdf/24- Todo dia a mesma noite. A História não contada da Boate Kiss - Daniela Arbex.pdf">Baixar</a>
+    </section>
+  </main>
+  <footer>
+    
+  </footer>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script defer src="/script/script.js">
+    
+  </script>
+</body>
+
+</html>
