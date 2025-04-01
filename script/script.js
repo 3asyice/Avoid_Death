@@ -1,7 +1,7 @@
 var x = document.getElementById('incident');
 var y = false;
 var i = document.getElementById('iframe_kiss');
-var severed = new Audio('/audio/ArtificialFear - ＂Severance＂ Intro Theme (Metal Version) ｜｜ Artificial Fear.opus');
+var severed = new Audio('./audio/ArtificialFear - ＂Severance＂ Intro Theme (Metal Version) ｜｜ Artificial Fear.opus');
 
 var player;
 
