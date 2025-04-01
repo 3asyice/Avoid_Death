@@ -1,7 +1,7 @@
 var x = document.getElementById('incident');
 var y = false;
 var i = document.getElementById('iframe_kiss');
-var severed = new Audio('./audio/ArtificialFear - ＂Severance＂ Intro Theme (Metal Version) ｜｜ Artificial Fear.opus');
+var severed = new Audio('https://raw.githubusercontent.com/3asyice/Avoid_Death/main/audio/ArtificialFear - ＂Severance＂ Intro Theme (Metal Version) ｜｜ Artificial Fear.opus');
 
 var player;
 
@@ -15,11 +15,11 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-  // O vídeo está pronto para ser controlado
+
 }
 
 function onPlayerStateChange(event) {
-  // Aqui você pode lidar com mudanças de estado se necessário
+
 }
 
 function kiss() {
@@ -34,7 +34,6 @@ function reject() {
   x.style.display = y ? 'block' : 'none';
   severed.pause();
   
-  // Pausar o vídeo do YouTube
   if (player && typeof player.pauseVideo === 'function') {
     player.pauseVideo();
   }
