@@ -38,3 +38,25 @@ function reject() {
     player.pauseVideo();
   }
 }
+
+var matrixhasyou = document.getElementById('matrixhasyounow');
+var matrixid = document.getElementById('matrix_id');
+var text = "Wake up, Neo...";
+var n = 0;
+
+function typeLetter() {
+  if (n < text.length) {
+    matrixhasyou.innerHTML += text.charAt(n);
+    n++;
+    setTimeout(typeLetter, 250); // Ajuste o tempo para mais rápido ou mais devagar
+  } else {
+    typeoff(); // Chama a função typeoff após o texto ser completamente digitado
+  }
+}
+
+function typeoff() {
+  matrixid.style.display = 'none'; // Esconde a div após o texto ser exibido
+}
+
+typeLetter();
+

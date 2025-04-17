@@ -15,6 +15,15 @@
     background: url('https://raw.githubusercontent.com/3asyice/Avoid_Death/main/img/images-3.jpeg');
     background-size: 350px;
   }
+    .matrix_wakes_you_up{
+    top:0;right:0;left:0;bottom:0;position:fixed;background:#000;
+  }
+  div.matrix_wakes_you_up p{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 7%;
+    margin-top: 7%;
+    color:#9cebbf;
+  }
   
   header {
     background: #33333391;
