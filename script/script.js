@@ -41,7 +41,7 @@ function reject() {
 
 var matrixhasyou = document.getElementById('matrixhasyounow');
 var matrixid = document.getElementById('matrix_id');
-var text = "Wake up, Neo...";
+var text = "Acorde, Neo...";
 var n = 0;
 
 // matrix
